@@ -1,4 +1,4 @@
-# STATS 201 Course Project: Good Looking, Good Rating? Beauty Premium in the Course Evaluation
+# Good Looking, Good Rating? Beauty Premium in the Course Evaluation
 
 Authors: Kuang Sheng & Liyan Wang
 
