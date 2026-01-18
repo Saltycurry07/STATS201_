@@ -38,9 +38,13 @@
 
 This repository includes a crawler script that fetches professor ratings for UCLA and NYU (Computer Science and Fine Arts) from RateMyProfessors and writes them to a CSV file.
 
-## Data of Rate My Professor
+## Faculty Photo Scraper
+
+This repository also includes a web scraper script that fetches professors' photos for UCLA and NYU (Computer Science) from university websites.
+
+## Data of RateMyProfessors
 Please refer to the latest version of data through this link: https://github.com/Saltycurry07/Beauty-Premium-in-the-Course-Evaluation/blob/main/rmp_ucla_nyu_professors.csv
 
-## Faculty Photo Data
+## Data of Faculty Photo
 
 Please refer to the latest version of data through this link: https://drive.google.com/drive/folders/1rZJVfmevApVX-XWipRbNk7OwWT1ggDXz?usp=sharing
