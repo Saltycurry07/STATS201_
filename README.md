@@ -2,7 +2,31 @@
 
 Authors: Kuang Sheng & Liyan Wang
 
-Do physically attractive professors receive more favorable student evaluations? This project builds a machine-learning pipeline that predicts professors’ course evaluation outcomes from facial images. We will construct a biographical dataset of professors from several U.S. universities, combining portrait photos with third-party evaluation measures from RateMyProfessors (RMP). Using an established deep-learning model (Liang et al., 2018) for facial attractiveness prediction, we will generate a standardized “beauty score” for each professor and link it to their RMP ratings. We will then train and compare multiple predictive models, such as linear regression with regularization (Ridge/Lasso), logistic regression (for high- vs. low-rating classification), and gradient-boosted trees (e.g., XGBoost), to assess predictive performance and identify the most suitable approach for this task.
+	Do physically attractive professors receive more favorable student evaluations? 
+	
+	This project builds a machine-learning pipeline that predicts professors’ course evaluation outcomes from facial images. 
+	
+	We will construct a biographical dataset of professors from several U.S. universities, combining portrait photos with third-party evaluation measures from RateMyProfessors (RMP).
+	
+	Using an established deep-learning model (Liang et al., 2018) for facial attractiveness prediction, we will generate a standardized “beauty score” for each professor and link it to their RMP ratings. 
+	
+	We will then train and compare multiple predictive models, such as linear regression with regularization (Ridge/Lasso), logistic regression (for high- vs. low-rating classification), and gradient-boosted trees (e.g., XGBoost), to assess predictive performance and identify the most suitable approach for this task.
+
+# Division of Responsibilities
+Kuang Sheng
+
+1.Using web-scraping to gather faculty photos from the university (department) websites
+2.Training logistic regression and gradient-boosted trees models for prediction
+3.Evaluating model performance
+4.Crafting the report and visualizing key results
+
+Liyan Wang
+
+1.Using web-scraping to gather data from Rate My Professor
+2.Employing the deep learning model to evaluate professors’ attractiveness level
+3.Training linear regression models to predict professors’ ratings
+4.Crafting the report and visualizing key results
+
 
 ## RateMyProfessors Crawler
 
