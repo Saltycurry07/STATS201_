@@ -22,7 +22,7 @@ I conducted this project by first using web scraping to collect teaching evaluat
 This repository includes a crawler script that fetches professor ratings for UCLA and NYU (Computer Science and Fine Arts) from RateMyProfessors and writes them to a CSV file.
 
 ## Data of Rate My Professor
-Please refer to the latest version of data through this link: 
+Please refer to the latest version of data through this link: https://github.com/Saltycurry07/Beauty-Premium-in-the-Course-Evaluation/blob/main/rmp_ucla_nyu_professors.csv
 
 ## Faculty Photo Data
 
