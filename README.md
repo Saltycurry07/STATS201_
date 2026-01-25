@@ -78,6 +78,25 @@ python beauty_score_from_csv.py \
 
 If images are relative paths, they will be resolved relative to the CSV file location. Any failures are logged to an `_errors.txt` file alongside the output CSV.
 
+## Baseline Models and Evaluation Strategy 
+Our lowest benchmark is a mean-prediction Dummy Regressor, which predicts the average 
+instructor rating observed in the training data. This model provides a reference point for 
+assessing whether facial-attractiveness information contributes any predictive value beyond a 
+naive baseline. 
+We then implement Linear Regression and Ridge Regression as the primary baseline models. 
+Linear regression allows us to test whether predicted facial-beauty scores are linearly 
+associated with course-evaluation outcomes. Ridge regression is particularly appropriate 
+given the small sample size and the inclusion of categorical variables, helping to stabilize 
+coefficient estimates and reduce overfitting. 
+All baseline models use the same limited feature set: the raw beauty score inferred from 
+faculty profile photos, along with two categorical controls indicating department (e.g., 
+Computer Science) and school. No additional demographic or professional characteristics are 
+included at this stage, ensuring that the baseline remains intentionally simple and 
+interpretable. 
+Model evaluation focuses primarily on Mean Absolute Error (MAE), which is reported in the 
+same scale as instructor ratings and is robust to outliers. Root Mean Squared Error (RMSE) 
+and R² are also reported as supplementary metrics to provide a fuller picture of predictive 
+performance.
 ## Baseline Models Performance
 On the cleaned pilot sample (n = 38), Linear Regression and Ridge achieve MAE = 0.83 (RMSE = 0.99), a modest improvement over the mean-prediction baseline (MAE = 0.87; RMSE = 1.03). Ridge performs slightly better than OLS, which is consistent with regularization helping stabilize estimates in a small-sample setting. However, cross-validated R² remains negative, suggesting that the current inputs, primarily the raw beauty score plus categorical controls (school and department), capture limited out-of-sample variation in RMP ratings. The gradient-boosted tree baseline (HistGBR) does not outperform the mean baseline, indicating little evidence of robust non-linear patterns given the present features and sample size. In the coming weeks, we will expand the dataset across more universities and incorporate additional signals (e.g., number of reviews) to reduce noise and improve predictive performance.
 ![CV results](model/evaluation/MAE_mean.png)
