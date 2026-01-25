@@ -82,3 +82,10 @@ python beauty_score_from_csv.py \
 ```
 
 If images are relative paths, they will be resolved relative to the CSV file location. Any failures are logged to an `_errors.txt` file alongside the output CSV.
+
+## Baseline Models Performance
+
+
+
+
+
