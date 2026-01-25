@@ -88,11 +88,13 @@ Linear regression allows us to test whether predicted facial-beauty scores are l
 associated with course-evaluation outcomes. Ridge regression is particularly appropriate 
 given the small sample size and the inclusion of categorical variables, helping to stabilize 
 coefficient estimates and reduce overfitting. 
+
 All baseline models use the same limited feature set: the raw beauty score inferred from 
 faculty profile photos, along with two categorical controls indicating department (e.g., 
 Computer Science) and school. No additional demographic or professional characteristics are 
 included at this stage, ensuring that the baseline remains intentionally simple and 
 interpretable. 
+
 Model evaluation focuses primarily on Mean Absolute Error (MAE), which is reported in the 
 same scale as instructor ratings and is robust to outliers. Root Mean Squared Error (RMSE) 
 and R² are also reported as supplementary metrics to provide a fuller picture of predictive 
