@@ -38,6 +38,7 @@ This repository also includes a web scraper script that fetches professors' phot
 
 ## Data of RateMyProfessors
 Please refer to the latest version of data through this link: https://github.com/Saltycurry07/Beauty-Premium-in-the-Course-Evaluation/blob/main/rmp_ucla_nyu_professors.csv
+![Summary](rmp_summary_figure_journal_color_big.png)
 
 ## Data of Faculty Photo
 
